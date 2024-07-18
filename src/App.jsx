@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import TodoForm from './components/form/Form';
 import TodoList from './components/todolist/todolist';
+import { Footer } from './components/footer/footer.jsx';
 import { Container, Typography } from '@mui/material';
 import "./App.css";
 
@@ -29,6 +30,7 @@ const App = () => {
   };
 
   return (
+    <div className="App">
     <Container>
       <Typography variant="h4" gutterBottom>
         Todo Listo
@@ -36,6 +38,9 @@ const App = () => {
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleComplete={toggleComplete} removeTodo={removeTodo} editTodo={editTodo} />
     </Container>
+    <Footer />
+    </div>
+
   );
 };
 
