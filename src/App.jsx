@@ -1,9 +1,10 @@
 
 
 import { useState } from 'react';
-import TodoForm from './components/navbar/navbar';
+import TodoForm from './components/form/Form';
 import TodoList from './components/todolist/todolist';
 import { Container, Typography } from '@mui/material';
+import "./App.css";
 
 const App = () => {
   const [todos, setTodos] = useState([]);

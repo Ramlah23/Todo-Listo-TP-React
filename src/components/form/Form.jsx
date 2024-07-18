@@ -1,5 +1,4 @@
 
-
 import { useState } from 'react';
 import { TextField, Button } from '@mui/material';
 
@@ -23,7 +22,7 @@ const TodoForm = ({ addTodo }) => {
         onChange={(e) => setTask(e.target.value)}
         fullWidth
       />
-      <Button type="submit" variant="contained" color="primary">
+      <Button  sx={{marginTop:"20px", backgroundColor: "#fe7be8",  }} type="submit" variant="contained" color="secondary">
         Añadir
       </Button>
     </form>
