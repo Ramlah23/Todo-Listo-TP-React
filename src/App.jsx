@@ -5,6 +5,7 @@ import { Footer } from "./components/footer/footer.jsx";
 import { Container, Typography, Box } from "@mui/material";
 import "./App.css";
 
+
 const App = () => {
   const [todos, setTodos] = useState([]);
 
@@ -42,7 +43,7 @@ const App = () => {
   return (
     <div className="App">
       <Container>
-        <Typography variant="h4" gutterBottom>
+        <Typography  sx={{marginTop:"30px"}}variant="h4" gutterBottom>
           Todo Listo
         </Typography>
         <TodoForm addTodo={addTodo} />
