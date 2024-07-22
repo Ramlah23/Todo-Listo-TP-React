@@ -2,12 +2,13 @@ import { useState } from "react";
 import TodoForm from "./components/form/Form";
 import TodoList from "./components/todolist/todolist";
 import { Footer } from "./components/footer/footer.jsx";
-import { Container, Typography, Box } from "@mui/material";
+import Filtros from "./components/filtros/filtros.jsx";
+import { Container, Typography } from "@mui/material";
 import "./App.css";
-
 
 const App = () => {
   const [todos, setTodos] = useState([]);
+  const [filtro, setFiltro] = useState("todas");
 
   const addTodo = (task) => {
     setTodos([...todos, { id: Date.now(), task, completed: false }]);
@@ -36,32 +37,27 @@ const App = () => {
     }
   };
 
-  const totalTodos = todos.length;
-  const completedTodos = todos.filter((todo) => todo.completed).length;
-  const incompleteTodos = todos.length - completedTodos;
+  const tareasFiltradas = todos.filter((todo) => {
+    if (filtro === "todas") return true;
+    if (filtro === "completas") return todo.completed;
+    if (filtro === "incompletas") return !todo.completed;
+    return true;
+  });
 
   return (
     <div className="App">
       <Container>
-        <Typography  sx={{marginTop:"30px"}}variant="h4" gutterBottom>
+        <Typography sx={{ marginTop: "30px" }} variant="h4" gutterBottom>
           Todo Listo
         </Typography>
         <TodoForm addTodo={addTodo} />
+        <Filtros setFiltro={setFiltro} />
         <TodoList
-          todos={todos}
+          todos={tareasFiltradas}
           toggleComplete={toggleComplete}
           removeTodo={removeTodo}
           editTodo={editTodo}
         />
-        <Box mt={2}>
-          <Typography variant="body1">Total de Tareas: {totalTodos}</Typography>
-          <Typography variant="body1">
-            Tareas Completas: {completedTodos}
-          </Typography>
-          <Typography variant="body1">
-            Tareas Incompletas: {incompleteTodos}
-          </Typography>
-        </Box>
       </Container>
 
       <Footer />
