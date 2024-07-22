@@ -1,15 +1,27 @@
-
-
-import { Button, ButtonGroup } from '@mui/material';
+import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 // eslint-disable-next-line react/prop-types
-const Filtros = ({ setFiltro }) => {
+const Filtros = ({ filtro, setFiltro }) => {
+  const handleChange = (event) => {
+    setFiltro(event.target.value);
+  };
+
   return (
-    <ButtonGroup sx={{marginTop:"20px", }} variant="contained" aria-label="outlined primary button group">
-      <Button sx={{backgroundColor: "#fe7be8", borderColor: "violet", }} color="secondary" onClick={() => setFiltro('todas')}>Todas</Button>
-      <Button sx={{backgroundColor: "#fe7be8", borderColor: "violet",  }} color="secondary" onClick={() => setFiltro('completas')}>Completas</Button>
-      <Button sx={{backgroundColor: "#fe7be8", borderColor: "violet",  }} color="secondary" onClick={() => setFiltro('incompletas')}>Incompletas</Button>
-    </ButtonGroup>
+    <Box sx={{ marginTop: "20px", display: "flex", justifyContent: "center", borderColor:"violet", ":hover":"violet"}}>
+      <FormControl sx={{ minWidth: 200 }}>
+        <InputLabel id="filtro-label">Filtrar</InputLabel>
+        <Select
+          labelId="filtro-label"
+          value={filtro}
+          label="Filtrar"
+          onChange={handleChange}
+        >
+          <MenuItem value="todas">Todas</MenuItem>
+          <MenuItem value="completas">Completas</MenuItem>
+          <MenuItem value="incompletas">Incompletas</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
   );
 };
 

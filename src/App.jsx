@@ -38,9 +38,9 @@ const App = () => {
   };
 
   const tareasFiltradas = todos.filter((todo) => {
-    if (filtro === "todas") return true;
-    if (filtro === "completas") return todo.completed;
-    if (filtro === "incompletas") return !todo.completed;
+    if (filtro === 'todas') return true;
+    if (filtro === 'completas') return todo.completed;
+    if (filtro === 'incompletas') return !todo.completed;
     return true;
   });
 
@@ -51,7 +51,7 @@ const App = () => {
           Todo Listo
         </Typography>
         <TodoForm addTodo={addTodo} />
-        <Filtros setFiltro={setFiltro} />
+        <Filtros filtro={filtro} setFiltro={setFiltro} />
         <TodoList
           todos={tareasFiltradas}
           toggleComplete={toggleComplete}
