@@ -47,10 +47,10 @@ Usa los botones disponibles para editar, eliminar o completar una tarea.
 Filtra las tareas según tus necesidades: muestra todas, solo las completadas o solo las incompletas.
 
 ## Tecnologías Utilizadas
-Vite: Para un entorno de desarrollo rápido.
-React: Biblioteca para construir interfaces de usuario.
-Material UI: Biblioteca de componentes para diseño y estilo.
-JavaScript (ES6+): Lenguaje principal para la lógica de la aplicación.
+- **Vite:** Para un entorno de desarrollo rápido.
+- **React:** Biblioteca para construir interfaces de usuario.
+- **Material UI:** Biblioteca de componentes para diseño y estilo.
+- **JavaScript (ES6+):** Lenguaje principal para la lógica de la aplicación.
 
 ---
 
