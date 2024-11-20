@@ -9,12 +9,11 @@ const TodoItem = ({ todo, toggleComplete, removeTodo, editTodo }) => {
     <ListItem
       secondaryAction={
         <>
-        
-          <IconButton edge="end" aria-label="edit" onClick={() => editTodo(todo.id)}>
-          <CiEdit />
+          <IconButton edge="end" aria-label="edit" onClick={() => editTodo(todo.id, todo.task)}>
+            <CiEdit />
           </IconButton>
           <IconButton edge="end" aria-label="delete" onClick={() => removeTodo(todo.id)}>
-          <RiDeleteBin6Fill />
+            <RiDeleteBin6Fill />
           </IconButton>
         </>
       }

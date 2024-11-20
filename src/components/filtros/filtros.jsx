@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
+import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types
 const Filtros = ({ filtro, setFiltro }) => {
@@ -7,8 +7,20 @@ const Filtros = ({ filtro, setFiltro }) => {
   };
 
   return (
-    <Box sx={{ marginTop: "20px", display: "flex", justifyContent: "center", borderColor:"violet", ":hover":"violet"}}>
-      <FormControl sx={{ minWidth: 200 }}>
+    <Box
+      sx={{
+        marginTop: "20px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <FormControl
+        sx={{
+          flex: 1, 
+          maxWidth: "100%", 
+          minWidth: "200px", // Ancho mínimo similar al input
+        }}
+      >
         <InputLabel id="filtro-label">Filtrar</InputLabel>
         <Select
           labelId="filtro-label"

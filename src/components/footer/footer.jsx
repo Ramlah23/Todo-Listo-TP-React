@@ -1,7 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -20,11 +17,7 @@ export const Footer = () => {
           &copy; 2024 Todo Listo by Cinthia Sosa💕 . Todos los derechos reservados.
         </Typography>
      
-      <FaInstagram />
-
-      <FaLinkedin />
-
-      <FaFacebook />
+      
       </Box>
 
   );
