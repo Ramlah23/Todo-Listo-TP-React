@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TextField, Button, Box} from "@mui/material";
+import { TextField, Button, Box } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types
 const TodoForm = ({ addTodo }) => {
@@ -15,7 +15,7 @@ const TodoForm = ({ addTodo }) => {
     }
     addTodo(task.trim()); // Añade la tarea sin espacios extra
     setTask("");
-    setError(false); 
+    setError(false);
   };
 
   return (
@@ -23,9 +23,9 @@ const TodoForm = ({ addTodo }) => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row", 
-          gap: 2, 
-          alignItems: "center", 
+          flexDirection: "row",
+          gap: 2,
+          alignItems: "center",
         }}
       >
         <TextField
@@ -35,7 +35,7 @@ const TodoForm = ({ addTodo }) => {
           error={error} // Muestra el error si el estado `error` es verdadero
           helperText={error ? "La tarea no puede estar vacía" : ""}
           sx={{
-            flex: 1, // Ajusta el ancho del input
+            flex: 1, 
             minWidth: "200px", // Asegura un tamaño mínimo
           }}
         />
@@ -43,9 +43,14 @@ const TodoForm = ({ addTodo }) => {
           type="submit"
           variant="contained"
           sx={{
-            backgroundColor: "#fe7be8",
+            backgroundColor: "#f5c6cb", 
+            color: "#fff", 
             whiteSpace: "nowrap",
             minWidth: "100px",
+            "&:hover": {
+              backgroundColor: "#f8d7e7", 
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", 
+            },
           }}
         >
           Añadir
