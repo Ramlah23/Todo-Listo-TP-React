@@ -18,7 +18,6 @@ Puedes ver la aplicación en funcionamiento aquí: [Todo Listo en Netlify](https
 
 ## Estructura del Proyecto
 
-```plaintext
 src/
 ├── components/
 │   ├── filtros/    # Componente para gestionar filtros
@@ -70,5 +69,3 @@ Este proyecto fue desarrollado por [Cinthia Sosa](https://github.com/Ramlah23/To
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ¡Gracias por usar Todo Listo! 📝✨
-
-
