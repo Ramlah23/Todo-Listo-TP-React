@@ -61,8 +61,8 @@ Este proyecto fue desarrollado por [Cinthia Sosa](https://github.com/Ramlah23/To
 
 ## Agradecimientos
 
-- A [Aldi mi profe preferida de programacion] por su apoyo.  
-- A la comunidad de [ADA] por la documentación clara y útil.  
+- A Aldi mi profe preferida de programacion por su apoyo paciencia y dedicacion❤️.  
+- A la comunidad de ADA 💞  por la documentación clara y útil.  
 
 ## Licencia
 
