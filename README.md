@@ -47,6 +47,7 @@ Usa los botones disponibles para editar, eliminar o completar una tarea.
 Filtra las tareas según tus necesidades: muestra todas, solo las completadas o solo las incompletas.
 
 ## Tecnologías Utilizadas
+
 - **Vite:** Para un entorno de desarrollo rápido.
 - **React:** Biblioteca para construir interfaces de usuario.
 - **Material UI:** Biblioteca de componentes para diseño y estilo.
