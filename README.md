@@ -34,7 +34,7 @@ src/
 ## Capturas de Pantalla
 
 ### Vista Principal
-![src/assets/Pantalla-principal-todoListo.png]
+![vista principal](src/assets/Pantalla-principal-todoListo.png)
 
 ### Agregar una Tarea
 ![Agregar tarea](src/assets/añadir-tarea.png)
