@@ -1,15 +1,15 @@
 import { Box, Typography } from "@mui/material";
 
-export const Footer = () => {
+export const Footer = () => { 
   return (
     <Box
       sx={{
         position: "fixed",
         bottom: 0,
-        width: "100%",
+        width: { xs: "auto", md: "100%" },
         textAlign: "center",
         padding: "10px",
-        backgroundColor: "#f5c6cb", // Un tono suave de rosa pastel
+        backgroundColor: "#f5c6cb", // rosa pastel
         boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)", // Añade sombra suave
       }}
     >
